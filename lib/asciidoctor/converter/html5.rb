@@ -416,8 +416,15 @@ MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
       %(<h1#{id_attr} class="sect0#{(role = node.role) ? " #{role}" : ''}">#{title}</h1>
 #{node.content})
     else
+      unless level > 5
+        header_level = level + 1
+        style = ''
+      else
+        header_level = 6
+        style = %(style="font-size:#{(95/level).round}px")
+      end
       %(<div class="sect#{level}#{(role = node.role) ? " #{role}" : ''}">
-<h#{level + 1}#{id_attr}>#{title}</h#{level + 1}>
+<h#{header_level}#{id_attr} #{style}>#{title}</h#{header_level}>
 #{level == 1 ? %[<div class="sectionbody">
 #{node.content}
 </div>] : node.content}

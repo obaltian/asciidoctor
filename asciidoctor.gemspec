@@ -8,9 +8,9 @@ Gem::Specification.new do |s|
   s.name = 'asciidoctor'
   s.version = Asciidoctor::VERSION
   s.summary = 'An implementation of the AsciiDoc text processor and publishing toolchain'
-  s.description = 'A fast, open source text processor and publishing toolchain for converting AsciiDoc content to HTML 5, DocBook 5, and other formats.'
-  s.authors = ['Dan Allen', 'Sarah White', 'Ryan Waldron', 'Jason Porter', 'Nick Hengeveld', 'Jeremy McAnally']
-  s.email = ['dan.j.allen@gmail.com']
+  s.description = 'A fast, open source text processor and publishing toolchain for converting AsciiDoc content to HTML 5, DocBook 5, and other formats. Patched with unlimited header level count.'
+  s.authors = ['Dan Allen', 'Sarah White', 'Ryan Waldron', 'Jason Porter', 'Nick Hengeveld', 'Jeremy McAnally', 'Oleksandr Baltian']
+  s.email = ['dan.j.allen@gmail.com', 'oleksandr.baltian@apostera.com']
   s.homepage = 'https://asciidoctor.org'
   s.license = 'MIT'
   # NOTE required ruby version is informational only; it's not enforced since it can't be overridden and can cause builds to break
